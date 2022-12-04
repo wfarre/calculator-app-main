@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
+  <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  </style>
 </head>
 <body>
   <header class="header">
@@ -26,77 +32,43 @@
   </header>
 
   <main>
-    <section class="calculator">
-      <form action="/">
+    <section class="calculator-section">
+      <form action="" method="POST" class="calculator">
         <header class="calculator__header">
-          <div class="calcultaor__header__result"></div>
+          <div id="result" class="calculator__header__result">0</div>
         </header>
         <div class="calculator__main">
           <div class="container">
-            <div class="number">
-              <div class="btn-wrapper">
-                <button class="btn" >1</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >2</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >3</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >4</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >5</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >6</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >7</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >8</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >9</button>
-              </div>
-            </div>
-            <div class="operators">
-              <div class="btn-wrapper">
-                <button class="btn">.</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn">0</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn">/</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >DEL</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >+</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn" >-</button>
-              </div>
-              <div class="btn-wrapper">
-                <button class="btn">x</button>
-              </div>
-            </div>
+            <!-- <div class="numbers"> -->
+                <button type="button" class="btn number one" value="1" >1</button>
+                <button type="button" class="btn number two" value="2" >2</button>
+                <button type="button" class="btn number three" value="3">3</button>
+                <button type="button" class="btn number four" value="4" >4</button>
+                <button type="button" class="btn number five" value="5" >5</button>
+                <button type="button" class="btn number six" value="6">6</button>
+                <button type="button" class="btn number seven" value="7" >7</button>
+                <button type="button" class="btn number eight"  value="8">8</button>
+                <button type="button" class="btn number nine"  value="9">9</button>
+                <button type="button " class="btn number point" value=".">.</button>
+                <button type="button " class="btn number zero" value="0">0</button>
+                <button type="button " class="btn operator divide" value="/">/</button>
+            <!-- </div> -->
+            <!-- <div class="operators operators--right"> -->
+                <button type="button " class="btn del"  value="del">DEL</button>
+                <button type="button " class="btn operator add"  value="+">+</button>
+                <button type="button " class="btn operator minus"  value="-">-</button>
+                <button type="button " class="btn operator multiply" value="*">x</button>
+            <!-- </div> -->
           </div>
-  
+         
         </div>
+
         <footer class="calculator__footer">
-          <div class="btn-wrapper">
-            <button class="btn" >RESET</button>
-          </div>
-          <div class="btn-wrapper">
-            <button class="btn">=</button>
-          </div>
+          <button type="reset" class="btn reset" value="reset" id="reset" >RESET</button>
+          <button type="submit" class="btn equal" id="submit" value="equal">=</button>
         </footer>
 
+       
       </form>
       
     </section>
@@ -108,5 +80,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script type="module" src="./dist/index.js" ></script>
 </body>
 </html>

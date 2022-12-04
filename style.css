@@ -1,0 +1,197 @@
+
+
+
+
+
+:root{
+    --bg-color-main: hsl(222, 26%, 31%);
+    --bg-color-toggle: hsl(223, 31%, 20%);
+    --bg-color-screen: hsl(224, 36%, 15%);
+
+    --key-bg: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+
+    --key-bg-toggle-red:hsl(6, 63%, 50%);
+    --key-shadow-red:hsl(6, 70%, 34%);
+
+    --key-bg-orange:hsl(30, 25%, 89%);
+    --key-shadow-orange:hsl(28, 16%, 65%);
+
+    --txt-white: hsl(0, 0%, 100%);
+    --txt-dark: hsl(221, 14%, 31%);
+}
+
+body{
+    background-color: var(--bg-color-main);
+    color:var(--txt-white);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    /* padding: 0 auto; */
+}
+
+.btn{
+    background-color: var(--key-bg);
+    border: none;
+    border-radius: 5px;
+    height: 3.75rem;
+    font-size: 24px;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0;
+    box-shadow: 0 6px 1px var(--key-shadow);
+}
+
+.number{
+    background-color: var(--key-bg-orange);
+    color: var(--txt-dark);
+    box-shadow: 0 6px 1px var(--key-shadow-orange);
+}
+
+.operator{
+    background-color: var(--key-bg-orange);
+    color: var(--txt-dark);
+    box-shadow: 0 6px 1px var(--key-shadow-orange);
+
+}
+
+.reset{
+    color: var(--txt-white);
+}
+
+.equal{
+    background-color: var(--key-bg-toggle-red);
+    color: var(--txt-white);
+    box-shadow: 0 6px 1px var(--key-shadow-red);
+}
+
+
+.divide{
+    grid-area: divide;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.point{
+    grid-area: point;
+}
+
+.del{
+    grid-area: del;
+    color: var(--txt-white);
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.add{
+    grid-area: add;
+}
+.minus{
+    grid-area: minus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.container{
+    height: calc(100% - 1.65rem - 1.4rem);
+    background-color: var(--bg-color-toggle);
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end:3;
+    padding: 1.65rem 1.7rem 1.4rem 1.7rem ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    grid-template-areas: 
+    "seven eight nine del"
+    "four five six add"
+    "one two three minus"
+    "point zero divide multiply";
+    border-radius: 10px 10px 0 0 ;
+
+}
+.calculator{
+    margin: 0 auto;
+    width:540px;
+    height: 630px;
+    display: grid;
+    grid-template-rows: 153px 385px 95px;
+    /* gap: 10px; */
+}
+
+.calculator__footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: calc(100% - 1.65rem);
+    background-color: var(--bg-color-toggle);
+    gap: 1.5rem;
+    padding: 1.65rem 1.7rem;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.calculator__header{
+    background-color: var(--bg-color-screen);
+    margin-bottom: 1.875rem;
+    height: 8.125rem;
+    border-radius: 10px;
+}
+
+.calculator__header__result{
+    height: 100%;
+    padding-right: 2.25rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.625rem;
+    font-weight: 800;
+
+}
+
+.header{
+    margin: 0 auto;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
