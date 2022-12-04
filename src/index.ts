@@ -1,4 +1,5 @@
-import {add, minus, multiply, divide, operation} from "./operations";
+import {add, minus, multiply, divide, operation} from "../src/operations";
+alert("yo")
 
 let entry: string = "";
 
@@ -91,10 +92,10 @@ buttons.forEach(button => {
             console.log((e.target as HTMLButtonElement).value);
             checkInput((e.target as HTMLButtonElement).value)
         }
-        
     })
 
 })
+
 
 
 

@@ -32,4 +32,7 @@ const operation = (operator :string, a:number, b:number) : number => {
     return a;
 }
 
+
+
+
 export {add, minus, multiply,divide, operation};

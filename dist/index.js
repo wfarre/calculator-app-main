@@ -1,4 +1,5 @@
-import { operation } from "./operations";
+import { operation } from "../dist/operations.js";
+alert("yo");
 let entry = "";
 let subtotal = 0;
 let operator = "add";
