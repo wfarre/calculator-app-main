@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <header class="header">
-      <h1 class="header__main__title">Calc</h1>
-      <div class="header__theme">
-        <h2 class="header__theme__title">theme</h2>
-        <div class="header__theme__switch">
+    <h1 class="header__main__title">Calc</h1>
+    <div class="header__theme">
+      <h2 class="header__theme__title">theme</h2>
+      <div class="header__theme__switch">
 
-        </div>
       </div>
+    </div>
   </header>
 
   <main>
@@ -40,47 +49,61 @@
         <div class="calculator__main">
           <div class="container">
             <!-- <div class="numbers"> -->
-                <button type="button" class="btn number one" value="1" >1</button>
-                <button type="button" class="btn number two" value="2" >2</button>
-                <button type="button" class="btn number three" value="3">3</button>
-                <button type="button" class="btn number four" value="4" >4</button>
-                <button type="button" class="btn number five" value="5" >5</button>
-                <button type="button" class="btn number six" value="6">6</button>
-                <button type="button" class="btn number seven" value="7" >7</button>
-                <button type="button" class="btn number eight"  value="8">8</button>
-                <button type="button" class="btn number nine"  value="9">9</button>
-                <button type="button " class="btn number point" value=".">.</button>
-                <button type="button " class="btn number zero" value="0">0</button>
-                <button type="button " class="btn operator divide" value="/">/</button>
+            <button type="button" class="btn number one" value="1">1</button>
+            <button type="button" class="btn number two" value="2">2</button>
+            <button type="button" class="btn number three" value="3">3</button>
+            <button type="button" class="btn number four" value="4">4</button>
+            <button type="button" class="btn number five" value="5">5</button>
+            <button type="button" class="btn number six" value="6">6</button>
+            <button type="button" class="btn number seven" value="7">7</button>
+            <button type="button" class="btn number eight" value="8">8</button>
+            <button type="button" class="btn number nine" value="9">9</button>
+            <button type="button " class="btn number point" value=".">.</button>
+            <button type="button " class="btn number zero" value="0">0</button>
+            <button type="button " class="btn operator divide" value="/">/</button>
             <!-- </div> -->
             <!-- <div class="operators operators--right"> -->
-                <button type="button " class="btn del"  value="del">DEL</button>
-                <button type="button " class="btn operator add"  value="+">+</button>
-                <button type="button " class="btn operator minus"  value="-">-</button>
-                <button type="button " class="btn operator multiply" value="*">x</button>
+            <button type="button " class="btn del" id="del" value="del">DEL</button>
+            <button type="button " class="btn operator add" value="+">+</button>
+            <button type="button " class="btn operator minus" value="-">-</button>
+            <button type="button " class="btn operator multiply" value="*">x</button>
             <!-- </div> -->
           </div>
-         
+
         </div>
 
         <footer class="calculator__footer">
-          <button type="reset" class="btn reset" value="reset" id="reset" >RESET</button>
+          <button type="reset" class="btn reset" value="reset" id="reset">RESET</button>
           <button type="submit" class="btn equal" id="submit" value="equal">=</button>
         </footer>
 
-       
+
       </form>
-      
+
     </section>
   </main>
 
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/path/to/howler.js"></script>
+  <script type="module" src="./dist/index.js"></script>
 
-  <script type="module" src="./dist/index.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js"
+    integrity="sha512-+wqa4/aOL4vwhL637A4p+6epqhUHDqpEfYJa1+PlzlMf908CSOb3xtIeKwZWh5Q0Q/R2nYUKxH4vvcQg+k8KKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
+    integrity="sha512-dMiBqqEV5i3KqpAdsgQSSZ72DnNib7otY0X+b/Tnn1EmLym1dxuZ19csdZqBnfDniKd9bmNtzStQzuMrIa5Ngw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.spatial.min.js"
+    integrity="sha512-bJ12cKgyPVNoCnZ6R7mGKMzsEpu2ROiWGyImoviSj/zE3jHS+xv5EiTIHM7HPjIk2/mD4TZMvqLpDiMgyAwdwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 {
-  "type":"module",
+  "type": "module",
   "name": "calculator-app-main",
   "version": "1.0.0",
   "description": "![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wfarre/calculator-app-main/issues"
   },
-  "homepage": "https://github.com/wfarre/calculator-app-main#readme"
+  "homepage": "https://github.com/wfarre/calculator-app-main#readme",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
 }

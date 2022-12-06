@@ -40,6 +40,7 @@ body{
     font-size: 1.7rem;
     padding: 0;
     box-shadow: 0 6px 1px var(--key-shadow);
+    animation: all 100ms;
 }
 
 .number{
@@ -186,6 +187,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.pressed{
+    position: relative;
+    transform: translateY(6px);
+    box-shadow: 0 0 1px var(--key-shadow);
+    animation: all 100ms;
+    
+}
+
+.pressed::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--txt-white);
+    opacity: 0.3;
 }
 
 
