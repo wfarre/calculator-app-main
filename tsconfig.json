@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "dist",
-        "target":"ES2022",
-        "strict": true
+        "target":"ES6",
+        "strict": true,
+        "moduleResolution":"node",
     },
     "files": ["src/index.ts"]
 }

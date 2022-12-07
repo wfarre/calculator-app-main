@@ -1,23 +1,65 @@
 {
-  "type": "module",
+  
   "name": "calculator-app-main",
+  
   "version": "1.0.0",
+  
   "description": "![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)",
+  
   "main": "index.js",
+  
+  "type": "module",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wfarre/calculator-app-main.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/wfarre/calculator-app-main.git"
+  
   },
+  
   "author": "",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/wfarre/calculator-app-main/issues"
+  
+    
+  "url": "https://github.com/wfarre/calculator-app-main/issues"
+  
   },
+  
   "homepage": "https://github.com/wfarre/calculator-app-main#readme",
+  
   "dependencies": {
-    "howler": "^2.2.3"
+  
+    
+  "howler": "^2.2.3",
+  
+    
+  "jss": "^10.9.2",
+  
+    
+  "jss-preset-default": "^10.9.2"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "@types/howler": "^2.2.7",
+  
+    
+  "eslint": "^8.29.0"
+  
   }
 }
