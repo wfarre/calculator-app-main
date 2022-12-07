@@ -13,7 +13,7 @@ let operator = "";
 let value = 0;
 let enterIsPressed = false;
 var sound = new Howl({
-    src: ['./assets/sounds/mechanical.mp3']
+    src: ['assets/sounds/mechanical.mp3']
 });
 //HTML elements
 const result = document.querySelector("#result");
